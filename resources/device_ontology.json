@@ -1,0 +1,530 @@
+{
+  "Device_type": {
+    "light": [
+      "light_status"
+    ],
+    "lamp": [
+      "lamp_status",
+      "lamp_brightness"
+    ],
+    "heater": [
+      "heater_status",
+      "heater_mode"
+    ],
+    "AC": [
+      "AC_status",
+      "AC_mode",
+      "AC_intensity"
+    ],
+    "dehumidifier": [
+      "dehumidifier_status",
+      "dehumidifier_mode",
+      "dehumidifier_container_full"
+    ],
+    "humidifier": [
+      "humidifier_status",
+      "humidifier_mode",
+      "humidifier_container_empty"
+    ],
+    "smart_lock": [
+      "smart_lock_status"
+    ],
+    "camera": [
+      "secure_mode",
+      "motion_detected"
+    ],
+    "smoke_sensor": [
+      "smoke_sensor_value"
+    ],
+    "alarm_clock": [
+      "alarm_clock_time",
+      "alarm_clock_status"
+    ],
+    "water_leak_sensor": [
+      "water_leak_sensor_value"
+    ],
+    "temperature_sensor": [
+      "temperature_sensor_value"
+    ],
+    "motion_sensor": [
+      "motion_sensor_value"
+    ],
+    "window": [
+      "window_status"
+    ],
+    "curtain": [
+      "curtain_status"
+    ],
+    "air_purifier": [
+      "air_purifier_status",
+      "air_purifier_mode"
+    ],
+    "gas_sensor": [
+      "gas_sensor_valve"
+    ],
+    "sprinkler_valve": [
+      "sprinkler_valve_status"
+    ],
+    "fan": [
+      "fan_status",
+      "fan_mode",
+      "fan_intensity"
+    ],
+    "oven": [
+      "oven_status",
+      "oven_mode"
+    ],
+    "plug": [
+      "plug_status"
+    ],
+    "door_sensor": [
+      "door_sensor_value"
+    ],
+    "doorbell": [
+      "doorbell_status"
+    ],
+    "thermostat": [
+      "thermostat_target_temp",
+      "thermostat_status"
+    ],
+    "robot_vacuum": [
+      "robot_vacuum_status"
+    ],
+    "speaker": [
+      "speaker_status",
+      "speaker_volume"
+    ],
+    "garage_door": [
+      "garage_door_status"
+    ],
+    "cooler": [
+      "cooler_status",
+      "cooler_mode"
+    ],
+    "siren": [
+      "siren_status"
+    ],
+    "window_lock": [
+      "window_lock_status"
+    ],
+    "washing_machine": [
+      "washing_machine_status",
+      "washing_machine_mode"
+    ],
+    "dishwasher": [
+      "dishwasher_status"
+    ],
+    "water_valve": [
+      "water_valve_status"
+    ],
+    "stove": [
+      "stove_status"
+    ],
+    "coffee_machine": [
+      "coffee_machine_status"
+    ],
+    "toaster": [
+      "toaster_status"
+    ],
+    "light_sensor": [
+      "light_sensor_value"
+    ],
+    "humidity_sensor": [
+      "humidity_sensor_value"
+    ],
+    "air_quality_sensor": [
+      "air_quality_sensor_value"
+    ]
+  },
+  "value_range": {
+    "light_status": [
+      "on",
+      "off"
+    ],
+    "lamp_status": [
+      "on",
+      "off"
+    ],
+    "lamp_brightness": [
+      "strong",
+      "medium",
+      "weak"
+    ],
+    "heater_status": [
+      "on",
+      "off"
+    ],
+    "heater_mode": [
+      "auto",
+      "high",
+      "low",
+      "eco"
+    ],
+    "AC_status": [
+      "on",
+      "off"
+    ],
+    "AC_mode": [
+      "cool",
+      "heat",
+      "auto",
+      "fan_only"
+    ],
+    "AC_intensity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "dehumidifier_status": [
+      "on",
+      "off"
+    ],
+    "dehumidifier_mode": [
+      "strong",
+      "medium",
+      "weak"
+    ],
+    "dehumidifier_container_full": [
+      "true",
+      "false"
+    ],
+    "humidifier_status": [
+      "on",
+      "off"
+    ],
+    "humidifier_mode": [
+      "strong",
+      "medium",
+      "weak"
+    ],
+    "humidifier_container_empty": [
+      "true",
+      "false"
+    ],
+    "smart_lock_status": [
+      "locked",
+      "unlocked"
+    ],
+    "secure_mode": [
+      "on",
+      "off"
+    ],
+    "motion_detected": [
+      "true",
+      "false"
+    ],
+    "smoke_sensor_value": [
+      "true",
+      "false"
+    ],
+    "alarm_clock_status": [
+      "on",
+      "off",
+      "ringing"
+    ],
+    "alarm_clock_time": [
+      "HH:MM (00:00-23:59)"
+    ],
+    "water_leak_sensor_value": [
+      "true",
+      "false"
+    ],
+    "temperature_sensor_value": [
+      "-20-59"
+    ],
+    "motion_sensor_value": [
+      "true",
+      "false"
+    ],
+    "window_status": [
+      "open",
+      "closed"
+    ],
+    "curtain_status": [
+      "open",
+      "closed"
+    ],
+    "air_purifier_status": [
+      "on",
+      "off"
+    ],
+    "air_purifier_mode": [
+      "auto",
+      "sleep",
+      "high",
+      "low"
+    ],
+    "gas_sensor_value": [
+      "true",
+      "false"
+    ],
+    "sprinkler_valve_status": [
+      "on",
+      "off"
+    ],
+    "fan_status": [
+      "on",
+      "off"
+    ],
+    "fan_mode": [
+      "static",
+      "shaking"
+    ],
+    "fan_intensity": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "oven_status": [
+      "on",
+      "off"
+    ],
+    "oven_mode": [
+      "bake",
+      "grill",
+      "convection"
+    ],
+    "plug_status": [
+      "on",
+      "off"
+    ],
+    "door_sensor_value": [
+      "open",
+      "closed"
+    ],
+    "doorbell_status": [
+      "pressed",
+      "idle"
+    ],
+    "thermostat_target_temp": [
+      "16-30 (integer)"
+    ],
+    "thermostat_status": [
+      "on",
+      "off"
+    ],
+    "robot_vacuum_status": [
+      "on",
+      "off",
+      "charging",
+      "self-cleaning"
+    ],
+    "speaker_status": [
+      "on",
+      "off"
+    ],
+    "speaker_volume": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "garage_door_status": [
+      "open",
+      "closed"
+    ],
+    "cooler_status": [
+      "on",
+      "off"
+    ],
+    "cooler_mode": [
+      "auto",
+      "high",
+      "low"
+    ],
+    "siren_status": [
+      "on",
+      "off"
+    ],
+    "window_lock_status": [
+      "locked",
+      "unlocked"
+    ],
+    "washing_machine_status": [
+      "on",
+      "off"
+    ],
+    "washing_machine_mode": [
+      "normal",
+      "quick_wash",
+      "heavy_duty",
+      "spin"
+    ],
+    "dishwasher_status": [
+      "on",
+      "off"
+    ],
+    "water_valve_status": [
+      "on",
+      "off"
+    ],
+    "stove_status": [
+      "on",
+      "off"
+    ],
+    "coffee_machine_status": [
+      "on",
+      "off"
+    ],
+    "toaster_status": [
+      "on",
+      "off"
+    ],
+    "light_sensor_value": [
+      "0-100000 "
+    ],
+    "humidity_sensor_value": [
+      "0-100"
+    ],
+    "air_quality_sensor_value": [
+      "0-500"
+    ]
+  },
+  "UNIT_MAP": [
+    {
+      "temperature_sensor_value": [
+        "°C"
+      ]
+    },
+    {
+      "thermostat_target_temp": [
+        "°C"
+      ]
+    },
+    {
+      "light_sensor_value": [
+        "lux"
+      ]
+    },
+    {
+      "humidity_sensor_value": [
+        "%"
+      ]
+    },
+    {
+      "air_quality_sensor_value": [
+        "AQI"
+      ]
+    }
+  ],
+  "Room_type": [
+    "living_room",
+    "bedroom",
+    "bathroom",
+    "kitchen",
+    "study_room",
+    "dining_room",
+    "backyard",
+    "garage",
+    "balcony",
+    "hallway",
+    "front_porch",
+    "laundry_room"
+  ],
+  "Issue_Classification": {
+    "Logical_Issues": {
+      "category_name": "Logical Issues",
+      "types": [
+        {
+          "type": "L1_Duplication",
+          "description": "Same trigger leads to multiple identical actions, resulting in resource waste.",
+          "example": "IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on; IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_light.light_status = on"
+        },
+        {
+          "type": "L2_Contradiction",
+          "description": "Same or similar trigger leads to mutually exclusive actions on the same device, causing system instability.",
+          "example": "IF living_room_temperature_sensor.temperature_sensor_value > 25 THEN living_room_AC.AC_mode = cool; IF living_room_temperature_sensor.temperature_sensor_value > 25 THEN living_room_heater.heater_status = on"
+        },
+        {
+          "type": "L3_Loop",
+          "description": "Rules trigger each other in an infinite cycle, causing the system to oscillate endlessly.",
+          "example": "IF living_room_light.light_status == on THEN living_room_window.window_status = open; IF living_room_window.window_status == open THEN living_room_light.light_status = on"
+        },
+        {
+          "type": "L4_Shadowing",
+          "description": "One rule's effect is always immediately overridden by another rule with a broader or encompassing trigger condition, rendering the first rule permanently ineffective.",
+          "example": "IF living_room_temperature_sensor.temperature_sensor_value > 28 THEN living_room_fan.fan_status = on; IF living_room_temperature_sensor.temperature_sensor_value > 20 THEN living_room_fan.fan_status = off"
+        },
+        {
+          "type": "L5_Unreachable_Rule",
+          "description": "A rule whose preconditions can never be simultaneously satisfied under the given device configuration, making it permanently inactive.",
+          "example": "Rule 1: IF kitchen_temperature_sensor.temperature_sensor_value > 30 THEN kitchen_AC.AC_status = on; Rule 2: IF kitchen_temperature_sensor.temperature_sensor_value < 20 THEN kitchen_AC.AC_status = on (both rules target the same device under mutually exclusive conditions, one will never fire in the other's context)"
+        }
+      ]
+    },
+    "Environment_Physical_Issues": {
+      "category_name": "Environmental & Physical Parameter Issues",
+      "types": [
+        {
+          "type": "E1_Open_Command",
+          "description": "Continuous action without a termination or feedback condition, potentially causing device overuse or dangerous physical states.",
+          "example": "IF bedroom_temperature_sensor.temperature_sensor_value < 15 THEN bedroom_heater.heater_status = on"
+        },
+        {
+          "type": "E2_Semantic_Error",
+          "description": "Action contradicts physical reality or safety logic, producing a response that worsens the detected situation.",
+          "example": "IF bathroom_water_leak_sensor.water_leak_sensor_value == true THEN backyard_sprinkler_valve.sprinkler_valve_status = on"
+        },
+        {
+          "type": "E3_Invalid_Assumption",
+          "description": "Parameters set beyond physical possibility or sensor range, indicating a misunderstanding of device capabilities.",
+          "example": "IF living_room_temperature_sensor.temperature_sensor_value > 100 THEN living_room_AC.AC_status = on"
+        },
+        {
+          "type": "E4_Threshold_Conflict",
+          "description": "Related rules use inconsistent or overlapping thresholds for the same parameter, causing device state oscillation.",
+          "example": "IF bedroom_temperature_sensor.temperature_sensor_value > 25 THEN bedroom_AC.AC_status = on; IF bedroom_temperature_sensor.temperature_sensor_value > 23 THEN bedroom_AC.AC_status = off"
+        },
+        {
+          "type": "E5_Missing_Guard_Condition",
+          "description": "A safety-critical action is triggered without sufficient preconditions or contextual guards to ensure safe execution.",
+          "example": "IF kitchen_smoke_sensor.smoke_sensor_value == true THEN kitchen_window.window_status = open"
+        },
+        {
+          "type": "E6_Action_Side_Effect",
+          "description": "A rule's action produces unintended physical environment side effects that are not accounted for in the rule logic.",
+          "example": "IF bathroom_humidifier.humidifier_status == on THEN bathroom_window.window_status = open"
+        }
+      ]
+    },
+    "Security_Exploitability_Issues": {
+      "category_name": "Security & Exploitability Issues",
+      "types": [
+        {
+          "type": "S1_Exploitable_Trigger",
+          "description": "Externally manipulable environmental inputs trigger sensitive security actions, enabling adversary exploitation.",
+          "example": "IF front_porch_motion_sensor.motion_sensor_value == true THEN front_porch_smart_lock.smart_lock_status = unlocked"
+        },
+        {
+          "type": "S2_Permission_Abuse",
+          "description": "Unrelated or low-priority events trigger high-privilege operations, violating the principle of least privilege.",
+          "example": "IF kitchen_smoke_sensor.smoke_sensor_value == true THEN front_porch_smart_lock.smart_lock_status = unlocked"
+        },
+        {
+          "type": "S3_Privilege_Escalation_via_Chaining",
+          "description": "Multiple individually benign rules combine to form a chain that achieves unauthorized access or privilege escalation.",
+          "example": "Rule 1: IF living_room_curtain.curtain_status == closed THEN living_room_camera.secure_mode = off; Rule 2: IF living_room_camera.secure_mode == off THEN front_porch_smart_lock.smart_lock_status = unlocked"
+        },
+        {
+          "type": "S4_Safety_Override_Bypass",
+          "description": "Indirect rule chains circumvent safety protection mechanisms through intermediate device state changes.",
+          "example": "Rule 1: IF bedroom_temperature_sensor.temperature_sensor_value > 35 THEN bedroom_window.window_status = open; Rule 2: IF bedroom_window.window_status == open THEN bedroom_smart_lock.smart_lock_status = unlocked"
+        }
+      ]
+    },
+    "Cross_Device_Physical_Hazards": {
+      "category_name": "Cross-Device & Cross-Room Hazards",
+      "types": [
+        {
+          "type": "C1_Cascading_Failure",
+          "description": "A single device failure or erroneous sensor reading propagates through the rule chain, affecting multiple downstream devices.",
+          "example": "Rule 1: IF kitchen_smoke_sensor.smoke_sensor_value == true (false alarm) THEN kitchen_gas_sensor.gas_sensor_valve = closed; Rule 2: IF kitchen_gas_sensor.gas_sensor_valve == closed THEN kitchen_oven.oven_status = off; Rule 3: IF kitchen_oven.oven_status == off THEN kitchen_speaker.speaker_status = on"
+        },
+        {
+          "type": "C2_Cross_Room_Security_Degradation",
+          "description": "A normal operation in one room triggers a rule chain that degrades the security level of another room.",
+          "example": "Rule 1: IF kitchen_smoke_sensor.smoke_sensor_value == true THEN kitchen_window.window_status = open; Rule 2: IF kitchen_window.window_status == open THEN garage_garage_door.garage_door_status = open"
+        }
+      ]
+    }
+  }
+}

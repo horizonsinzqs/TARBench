@@ -1,0 +1,10 @@
+{
+  "model": "gpt-5.4",
+  "temperature": 0,
+  "batch_size": 5,
+  "sample_count": 20,
+  "dataset_file": "datasets/token_compression_eval_500_250.json",
+  "prompt_file": "token_compression_prompt.md",
+  "output_dir": "outputs",
+  "max_retries": 5
+}

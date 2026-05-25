@@ -1,0 +1,61 @@
+[
+  {
+    "Model": "gpt-5.4",
+    "Sample_Index": 1,
+    "Case_ID": "L_6432",
+    "Label": "benign",
+    "Scenario_Group": "Package & Delivery",
+    "Chain_Length": 10,
+    "Rules": [
+      "Rule_1: IF kitchen_smoke_sensor.smoke_sensor_value == true THEN kitchen_siren.siren_status = on",
+      "Rule_2: IF kitchen_air_quality_sensor.air_quality_sensor_value > 250 THEN kitchen_window.window_status = open",
+      "Rule_3: IF kitchen_temperature_sensor.temperature_sensor_value > 40 THEN kitchen_stove.stove_status = off",
+      "Rule_4: IF kitchen_alarm_clock.alarm_clock_time == 23:00 THEN kitchen_oven.oven_status = off",
+      "Rule_5: IF kitchen_door_sensor.door_sensor_value == open THEN hallway_light.light_status = on",
+      "Rule_6: IF hallway_motion_sensor.motion_sensor_value == true THEN hallway_speaker.speaker_status = on",
+      "Rule_7: IF kitchen_smoke_sensor.smoke_sensor_value == true THEN dining_room_light.light_status = on",
+      "Rule_8: IF kitchen_air_quality_sensor.air_quality_sensor_value > 300 THEN kitchen_air_purifier.air_purifier_status = on",
+      "Rule_9: IF kitchen_temperature_sensor.temperature_sensor_value > 38 THEN kitchen_cooler.cooler_status = on",
+      "Rule_10: IF hallway_alarm_clock.alarm_clock_time == 23:05 THEN hallway_camera.secure_mode = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "Retrieved_Documents": [],
+    "Retrieved_Context": {},
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Sample_Index": 2,
+    "Case_ID": "L_2235",
+    "Label": "benign",
+    "Scenario_Group": "Vacation / Extended Away",
+    "Chain_Length": 3,
+    "Rules": [
+      "Rule_1: IF bathroom_motion_sensor.motion_sensor_value == true THEN bathroom_light.light_status = on",
+      "Rule_2: IF bathroom_temperature_sensor.temperature_sensor_value < 19 THEN bathroom_heater.heater_status = on",
+      "Rule_3: IF bathroom_humidity_sensor.humidity_sensor_value > 78 THEN bathroom_fan.fan_status = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "Retrieved_Documents": [],
+    "Retrieved_Context": {},
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  }
+]

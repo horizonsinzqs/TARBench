@@ -1,0 +1,98 @@
+{
+  "source_file": "data/abnormal/abnormal_chains_gpt54.json",
+  "note": "Dual/Triple anomalies are counted once for each constituent base type before RR/RE aggregation.",
+  "rr_interaction": {
+    "total_instances": 3925,
+    "rows": [
+      {
+        "abbr": "AC",
+        "name": "Action Conflict",
+        "count": 1125,
+        "percentage": 28.7
+      },
+      {
+        "abbr": "AD",
+        "name": "Action Duplication",
+        "count": 675,
+        "percentage": 17.2
+      },
+      {
+        "abbr": "AR",
+        "name": "Action Revert",
+        "count": 500,
+        "percentage": 12.7
+      },
+      {
+        "abbr": "EL",
+        "name": "Endless Loop",
+        "count": 650,
+        "percentage": 16.6
+      },
+      {
+        "abbr": "CB",
+        "name": "Condition Bypass",
+        "count": 725,
+        "percentage": 18.5
+      },
+      {
+        "abbr": "AM",
+        "name": "Action Mutex",
+        "count": 150,
+        "percentage": 3.8
+      },
+      {
+        "abbr": "IS",
+        "name": "Illegal State",
+        "count": 100,
+        "percentage": 2.5
+      }
+    ]
+  },
+  "re_interaction": {
+    "total_instances": 1525,
+    "rows": [
+      {
+        "abbr": "AB",
+        "name": "Action Block",
+        "count": 300,
+        "percentage": 19.7
+      },
+      {
+        "abbr": "CBk",
+        "name": "Condition Block",
+        "count": 150,
+        "percentage": 9.8
+      },
+      {
+        "abbr": "BE",
+        "name": "Boundary Error",
+        "count": 100,
+        "percentage": 6.6
+      },
+      {
+        "abbr": "TM",
+        "name": "Trigger Mutex",
+        "count": 225,
+        "percentage": 14.8
+      },
+      {
+        "abbr": "CV",
+        "name": "Common-sense Violation",
+        "count": 375,
+        "percentage": 24.6
+      },
+      {
+        "abbr": "PE",
+        "name": "Privilege Escalation",
+        "count": 150,
+        "percentage": 9.8
+      },
+      {
+        "abbr": "PD",
+        "name": "Physical Danger",
+        "count": 225,
+        "percentage": 14.8
+      }
+    ]
+  }
+}

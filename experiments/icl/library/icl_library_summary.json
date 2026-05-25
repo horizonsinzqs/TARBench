@@ -1,0 +1,26 @@
+{
+  "excluded_chain_ids": 750,
+  "counts": {
+    "type_definitions": 14,
+    "benign_examples": 10083,
+    "abnormal_examples": 4350
+  },
+  "abnormal_type_counts": {
+    "Action Block": 140,
+    "Action Conflict": 472,
+    "Action Duplication": 465,
+    "Action Mutex": 139,
+    "Action Revert": 479,
+    "Common Sense Violation": 283,
+    "Condition Block": 141,
+    "Condition Bypass": 479,
+    "Dual Anomaly": 525,
+    "Illegal State Rule": 92,
+    "Loop": 476,
+    "Physical Cross-rule Interaction": 141,
+    "Privilege Escalation": 141,
+    "Safety Boundary Error": 98,
+    "Trigger Mutex": 137,
+    "Triple Anomaly": 142
+  }
+}

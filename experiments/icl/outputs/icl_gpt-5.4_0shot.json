@@ -1,0 +1,78 @@
+[
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 0,
+    "Sample_Index": 1,
+    "Case_ID": "AB_000445",
+    "Label": "abnormal",
+    "Scenario_Group": "Night/Sleep Mode",
+    "Chain_Length": 8,
+    "Rules": [
+      "Rule_1: IF balcony_alarm_clock.alarm_clock_time == 17:30 THEN balcony_curtain.curtain_status = open",
+      "Rule_2: IF environment_time.time_point == 23:00 THEN living_room_window.window_status = open",
+      "Rule_3: IF environment_time.time_point == 23:00 THEN living_room_window.window_status = closed",
+      "Rule_4: IF balcony_light_sensor.light_sensor_value == 170 THEN balcony_lamp.lamp_status = on",
+      "Rule_5: IF balcony_temperature_sensor.temperature_sensor_value == 27 THEN balcony_cooler.cooler_status = on",
+      "Rule_6: IF balcony_air_quality_sensor.air_quality_sensor_value == 120 THEN balcony_air_purifier.air_purifier_status = on",
+      "Rule_7: IF balcony_humidity_sensor.humidity_sensor_value == 64 THEN balcony_dehumidifier.dehumidifier_status = on",
+      "Rule_8: IF balcony_motion_sensor.motion_sensor_value == true THEN balcony_speaker.speaker_status = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": true,
+      "anomaly_type": "Action Conflict",
+      "type_id": "AC_089",
+      "sub_category": "Atomic Action Conflict",
+      "description": "Rule_2 and Rule_3 conflict on living_room_window.window_status.",
+      "abnormal_fragment_start_index": 2,
+      "abnormal_fragment_length": 2,
+      "abnormal_fragment_id_list": [
+        "R_0002",
+        "R_0003"
+      ]
+    },
+    "ICL_Context": {
+      "type_definitions": [],
+      "benign_reference": [],
+      "few_shot_examples": []
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Shot_Count": 0,
+    "Sample_Index": 2,
+    "Case_ID": "L_1714",
+    "Label": "benign",
+    "Scenario_Group": "Guest Mode",
+    "Chain_Length": 6,
+    "Rules": [
+      "Rule_1: IF garage_alarm_clock.alarm_clock_time == 22:00 THEN garage_camera.secure_mode = on",
+      "Rule_2: IF garage_door_sensor.door_sensor_value == open THEN garage_lamp.lamp_status = on",
+      "Rule_3: IF garage_temperature_sensor.temperature_sensor_value < 16 THEN garage_heater.heater_status = on",
+      "Rule_4: IF garage_humidity_sensor.humidity_sensor_value > 68 THEN garage_dehumidifier.dehumidifier_mode = strong",
+      "Rule_5: IF garage_air_quality_sensor.air_quality_sensor_value > 118 THEN garage_air_purifier.air_purifier_status = on",
+      "Rule_6: IF garage_motion_sensor.motion_sensor_value == true THEN garage_speaker.speaker_status = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "ICL_Context": {
+      "type_definitions": [],
+      "benign_reference": [],
+      "few_shot_examples": []
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  }
+]

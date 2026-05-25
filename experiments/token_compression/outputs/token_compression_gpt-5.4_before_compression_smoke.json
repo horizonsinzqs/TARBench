@@ -1,0 +1,62 @@
+[
+  {
+    "Model": "gpt-5.4",
+    "Sample_Index": 1,
+    "Case_ID": "TCA_000150",
+    "Label": "abnormal",
+    "Scenario_Group": "Climate Comfort",
+    "Chain_Length": 6,
+    "Rules": [
+      "Rule_1: IF dining_room_motion_sensor.motion_sensor_value == true THEN dining_room_air_purifier.air_purifier_mode = high",
+      "Rule_2: IF dining_room_motion_sensor.motion_sensor_value == false THEN dining_room_curtain.curtain_status = open",
+      "Rule_3: IF dining_room_motion_sensor.motion_sensor_value == false THEN dining_room_AC.AC_status = off",
+      "Rule_4: IF dining_room_light_sensor.light_sensor_value < 222 THEN dining_room_AC.AC_status = off",
+      "Rule_5: IF environment_time.time_point == 08:00 THEN living_room_curtain.curtain_status = closed",
+      "Rule_6: IF living_room_light_sensor.light_sensor_value < 100lux THEN hallway_camera.secure_mode = off"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": true,
+      "involved_rules": [
+        "Rule_5",
+        "Rule_6"
+      ],
+      "anomaly_type": "Physical Cross-rule Interaction",
+      "sub_category": "Physical Cross-rule Interaction"
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  },
+  {
+    "Model": "gpt-5.4",
+    "Sample_Index": 2,
+    "Case_ID": "TCB_000302",
+    "Label": "benign",
+    "Scenario_Group": "Air Quality Management",
+    "Chain_Length": 8,
+    "Rules": [
+      "Rule_1: IF kitchen_motion_sensor.motion_sensor_value == false THEN kitchen_water_valve.water_valve_status = on",
+      "Rule_2: IF kitchen_air_quality_sensor.air_quality_sensor_value > 73 THEN kitchen_plug.plug_status = on",
+      "Rule_3: IF kitchen_curtain.curtain_status == open THEN kitchen_dishwasher.dishwasher_status = on",
+      "Rule_4: IF kitchen_light_sensor.light_sensor_value < 309 THEN kitchen_oven.oven_mode = grill",
+      "Rule_5: IF kitchen_gas_sensor.gas_sensor_valve == false THEN kitchen_stove.stove_status = on",
+      "Rule_6: IF kitchen_temperature_sensor.temperature_sensor_value < 26 THEN kitchen_stove.stove_status = on",
+      "Rule_7: IF kitchen_temperature_sensor.temperature_sensor_value < 26 THEN kitchen_oven.oven_mode = bake",
+      "Rule_8: IF kitchen_temperature_sensor.temperature_sensor_value < 26 THEN kitchen_coffee_machine.coffee_machine_status = on"
+    ],
+    "Ground_Truth": {
+      "has_anomaly": false,
+      "involved_rules": [],
+      "anomaly_type": null
+    },
+    "LLM_Prediction": {
+      "has_anomaly": null,
+      "reason": "Model output could not be parsed.",
+      "involved_rules": []
+    },
+    "Raw_Response": ""
+  }
+]

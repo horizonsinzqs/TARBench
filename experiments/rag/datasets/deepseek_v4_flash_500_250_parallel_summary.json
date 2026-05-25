@@ -1,0 +1,30 @@
+{
+  "dataset_file": "<absolute-path-removed>",
+  "prefix": "deepseek_v4_flash_500_250_parallel",
+  "benign_count": 500,
+  "abnormal_count": 250,
+  "shard_count": 3,
+  "shards": [
+    {
+      "shard_name": "deepseek_v4_flash_500_250_parallel_shard1",
+      "file": "<absolute-path-removed>",
+      "benign": 167,
+      "abnormal": 84,
+      "total": 251
+    },
+    {
+      "shard_name": "deepseek_v4_flash_500_250_parallel_shard2",
+      "file": "<absolute-path-removed>",
+      "benign": 167,
+      "abnormal": 83,
+      "total": 250
+    },
+    {
+      "shard_name": "deepseek_v4_flash_500_250_parallel_shard3",
+      "file": "<absolute-path-removed>",
+      "benign": 166,
+      "abnormal": 83,
+      "total": 249
+    }
+  ]
+}

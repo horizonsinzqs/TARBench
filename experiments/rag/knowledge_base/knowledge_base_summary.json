@@ -1,0 +1,60 @@
+{
+  "total_documents": 12205,
+  "doc_type_counts": {
+    "abnormal_case": 3600,
+    "abnormal_type_definition": 14,
+    "benign_pattern": 8583,
+    "contrastive_guideline": 8
+  },
+  "excluded_rag_chain_ids": 3000,
+  "abnormal_type_counts": {
+    "Action Block": 101,
+    "Action Conflict": 401,
+    "Action Duplication": 384,
+    "Action Mutex": 118,
+    "Action Revert": 397,
+    "Common Sense Violation": 234,
+    "Condition Block": 115,
+    "Condition Bypass": 385,
+    "Dual Anomaly": 443,
+    "Illegal State Rule": 84,
+    "Loop": 384,
+    "Physical Cross-rule Interaction": 126,
+    "Privilege Escalation": 106,
+    "Safety Boundary Error": 83,
+    "Trigger Mutex": 122,
+    "Triple Anomaly": 117
+  },
+  "scenario_group_counts": {
+    "Air Quality Management": 165,
+    "Arriving Home": 173,
+    "Bathroom Automation": 176,
+    "Child/Elder Safety": 165,
+    "Cleaning & Housekeeping": 169,
+    "Climate Comfort": 187,
+    "Cooking & Kitchen": 174,
+    "Energy Saving": 161,
+    "Entertainment & Leisure": 188,
+    "Garage & Vehicle": 164,
+    "Garden & Outdoor": 176,
+    "Guest Mode": 161,
+    "Laundry Management": 182,
+    "Leaving Home": 164,
+    "Morning Routine": 161,
+    "Night/Sleep Mode": 175,
+    "Nighttime Navigation": 186,
+    "Package & Delivery": 171,
+    "Safety Response": 176,
+    "Seasonal Adjustment": 170,
+    "Security & Surveillance": 167,
+    "Vacation / Extended Away": 170,
+    "Weather Response": 165,
+    "__cross_scenario__": 8237
+  },
+  "source_files": {
+    "benign": "data/benign/benign_long_chains_gpt54.json",
+    "abnormal": "data/abnormal/abnormal_chains_gpt54.json",
+    "type_definitions": "docs/abnormal_type_definitions.md",
+    "rag_dataset": "<absolute-path-removed>"
+  }
+}

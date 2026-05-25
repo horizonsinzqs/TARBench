@@ -1,0 +1,17 @@
+{
+  "model": "gpt-5.4",
+  "temperature": 0,
+  "batch_size": 5,
+  "sample_count": 20,
+  "dataset_file": "../datasets/rag_dataset.json",
+  "knowledge_base_file": "knowledge_base/knowledge_base.jsonl",
+  "prompt_file": "rag_prompt.md",
+  "output_dir": "outputs",
+  "top_k": {
+    "abnormal_type_definition": 4,
+    "abnormal_case": 5,
+    "benign_pattern": 5,
+    "contrastive_guideline": 4
+  },
+  "retrieved_doc_max_chars": 900
+}
